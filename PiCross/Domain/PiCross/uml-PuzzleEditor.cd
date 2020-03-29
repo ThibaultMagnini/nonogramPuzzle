@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Aan te maken met PiCrossFacade">
+    <Position X="2.344" Y="0.792" Height="0.291" Width="4.117" />
+  </Comment>
+  <Comment CommentText="Stelt de constraints van een rij of kolom voor.">
+    <Position X="11.135" Y="2.865" Height="0.291" Width="4.117" />
+  </Comment>
+  <Comment CommentText="Stelt een enkel vierkantje voor.">
+    <Position X="1.552" Y="5.74" Height="0.291" Width="4.117" />
+  </Comment>
+  <Class Name="PiCross.Constraints">
+    <Position X="8.25" Y="5" Width="5.25" />
+    <Members>
+      <Method Name="Constraints" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="Generate" Hidden="true" />
+      <Method Name="GenerateIntegers" Hidden="true" />
+      <Method Name="GeneratePatterns" Hidden="true" />
+      <Method Name="GenerateSlices" Hidden="true" />
+      <Method Name="GenerateSpacings" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="IsSatisfied" Hidden="true" />
+      <Method Name="Lift" Hidden="true" />
+      <Method Name="Reverse" Hidden="true" />
+      <Method Name="SatisfiedPrefixLength" Hidden="true" />
+      <Method Name="SatisfiedSuffixLength" Hidden="true" />
+      <Method Name="Superposition" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="UnsatisfiedValueRange" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="PiCross.Constraints.Generator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PiCross\Constraints.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CgAACIAAAAAAAAAEgIggAgAAAAAAAKAgAAAiAGAAAEI=</HashCode>
+      <FileName>PiCross\Constraints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="PiCross.IPuzzleEditor">
+    <Position X="3" Y="1.25" Width="4.25" />
+    <AssociationLine Name="ColumnConstraints" Type="PiCross.IPuzzleEditorConstraints">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.513" Y="1.443" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="RowConstraints" Type="PiCross.IPuzzleEditorConstraints">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.492" Y="0.735" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAEAAAABAAAAIAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PiCross\IPuzzleEditor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Grid" />
+      <Property Name="ColumnConstraints" />
+      <Property Name="RowConstraints" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="PiCross.IPuzzleEditorConstraints">
+    <Position X="9.25" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>PiCross\IPuzzleEditor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PiCross.IPuzzleEditorSquare">
+    <Position X="2.25" Y="4" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PiCross\IPuzzleEditor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
